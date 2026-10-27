@@ -40,8 +40,9 @@ Every new ARM64 or Intel release is only considered **complete** when all of the
 3. Publish the architecture-specific ZIP and immutable tag; keep ARM64 GitHub Latest, Intel a separate release lane.
 4. Independently download the public ZIP and verify its SHA256 against the RSA-signed manifest.
 5. Publish the verified architecture-specific catalog at `channels/stable.json` or `channels/x86_64/stable.json`; update this README's current version and download URLs.
-6. Verify both catalogs and signed candidate **discovery in QA**, then explicitly activate the compatible candidate, execute a real GUI update and recovery smoke test. Activate on Prod only after QA acceptance.
-7. Store release evidence and stop/fail closed whenever *any* preceding phase fails.
+6. Verify both catalogs and signed candidate **discovery in QA**, then explicitly activate the compatible candidate. **Before authorizing the Update button on an existing macOS QA client, prove ordinary system-trusted HTTPS succeeds** (no `curl -k`, no SSL bypass), and the old Client's normal `update --check` discovers the exact signed candidate. A private QA root merely present in a keychain is not necessarily trusted; obtain legitimate interactive macOS TLS trust authorization from the QA VM admin, or use a properly publicly trusted QA endpoint.
+7. Perform the actual old-to-new GUI update and recovery smoke test, including preserved Companion disabled state and no unknown-tab closure. Activate on Prod only after QA acceptance.
+8. Store release evidence and stop/fail closed whenever *any* preceding phase fails.
 
 Future automation and test enforcement are tracked in **[Meilleur Commander #1556](https://github.com/Meilleur-Tech/Meilleur-Commander/issues/1556)**. This checklist must not be mistaken for automatic enforcement until the release pipeline implements it.
 
