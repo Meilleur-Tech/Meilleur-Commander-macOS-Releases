@@ -1,28 +1,28 @@
 # Meilleur Commander · macOS Downloads
 
-Official public, **binary-only** Meilleur Commander Client releases for macOS. Choose the package matching your CPU. **Current release: 2.2.0** (Apple Silicon and Intel).
+Official public, **binary-only** Meilleur Commander Client releases for macOS. Choose the package matching your CPU. **Current release: 2.2.1** (Apple Silicon and Intel).
 
 | Your Mac | Current version | Download |
 | --- | --- | --- |
-| **Apple Silicon (M1, M2, M3, M4 and newer)** · `arm64` | **2.2.0** · GitHub **Latest** | [Download macOS 2.2.0 for Apple Silicon](https://github.com/Meilleur-Tech/Meilleur-Commander-macOS-Releases/releases/download/macos-client-v2.2.0/Meilleur-Commander-Client-macOS-arm64-2.2.0.zip) |
-| **Intel Mac** · `x86_64` | **2.2.0** · independent Intel channel | [Download macOS 2.2.0 for Intel](https://github.com/Meilleur-Tech/Meilleur-Commander-macOS-Releases/releases/download/macos-client-x86_64-v2.2.0/Meilleur-Commander-Client-macOS-x86_64-2.2.0.zip) |
+| **Apple Silicon (M1, M2, M3, M4 and newer)** · `arm64` | **2.2.1** · GitHub **Latest** | [Download macOS 2.2.1 for Apple Silicon](https://github.com/Meilleur-Tech/Meilleur-Commander-macOS-Releases/releases/download/macos-client-v2.2.1/Meilleur-Commander-Client-macOS-arm64-2.2.1.zip) |
+| **Intel Mac** · `x86_64` | **2.2.1** · independent Intel channel | [Download macOS 2.2.1 for Intel](https://github.com/Meilleur-Tech/Meilleur-Commander-macOS-Releases/releases/download/macos-client-x86_64-v2.2.1/Meilleur-Commander-Client-macOS-x86_64-2.2.1.zip) |
 
 Both downloads are **ZIP archives containing the macOS DMG** and product identity. Download the correct ZIP, extract the DMG, open it, and install **Meilleur Commander Client.app** into Applications. The macOS GUI requires macOS 13 or later.
 
 **Signing:** App binaries are *ad-hoc code-signed*, not Apple Developer ID signed or notarized. The **update manifest is independently RSA signed**. If macOS blocks the app, allow that specific app through System Settings as appropriate. Never disable Gatekeeper globally.
 
-## What's new in 2.2.0
+## What's new in 2.2.1
 
-- Native Client and Core at the same product version, with normal signed Gateway updates and recovery.
-- **Companion and browser adapter are bundled** for ARM64 and Intel and travel with the Client update; no customer runtime source checkout is required.
-- Companion version and health are available in the Client. Browser-tab lifecycle includes the #1539/#1541 safety fixes.
-- Fixes for Copy/Paste in the first-run UI and initial Settings scroll position are included in the macOS 2.2 line.
+- Native AppKit client and bundled Core are both built from the exact 2.2.1 source commit. Signed Gateway release manifests and authenticated offline recovery are supported.
+- **Companion and browser adapter remain bundled** for ARM64 and Intel and travel with the Client update; no customer runtime source checkout is required.
+- Companion version, health, and explicit on/off controls are available. Browser-tab lifecycle includes the #1539/#1541 safety fixes.
+- First-run Copy/Paste, Settings layout, native product recovery, and offline legal/about information improvements from the 2.2 line are included.
 
-**Companion on/off controls in Settings are planned for 2.2.1** (see [#1554](https://github.com/Meilleur-Tech/Meilleur-Commander/issues/1554)). Installing 2.2.0 is not proof that every customer's environment has passed live QA.
+**Known limitation:** An existing 2.1.7 client was recovered to working 2.2.1 by downloading the signed DMG and using authenticated offline reconciliation. This does **not** prove a fully automatic one-click 2.1.7 to 2.2.1 update or rollback. The separate QA Gateway feed is not synchronized; see [#1561](https://github.com/Meilleur-Tech/Meilleur-Commander/issues/1561) and [#1564](https://github.com/Meilleur-Tech/Meilleur-Commander/issues/1564). Intel hardware acceptance remains assigned to Chris. These checks are not presented as passed.
 
 ## Public discovery vs. Gateway activation
 
-GitHub has **only one Latest label** per repository, so **ARM64 is Latest**. Intel is published under the separately versioned `macos-client-x86_64-v2.2.0` tag. The two architecture channels must never overwrite one another.
+GitHub has **only one Latest label** per repository, so **ARM64 is Latest**. Intel is published under the separately versioned `macos-client-x86_64-v2.2.1` tag. The two architecture channels must never overwrite one another.
 
 The discovery catalogs are:
 
