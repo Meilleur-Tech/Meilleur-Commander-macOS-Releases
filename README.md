@@ -1,17 +1,21 @@
 # Meilleur Commander · macOS Downloads
 
-Official public, **binary-only** Meilleur Commander Client releases for macOS. Choose the package matching your CPU. **Current release: 2.2.2** (Apple Silicon and Intel).
+Official public, **binary-only** Meilleur Commander Client releases for macOS. Choose the package matching your CPU. **Current release: 2.2.3** (Apple Silicon and Intel).
 
 | Your Mac | Current version | Download |
 | --- | --- | --- |
-| **Apple Silicon (M1, M2, M3, M4 and newer)** · `arm64` | **2.2.2** · GitHub **Latest** | [Download macOS 2.2.2 for Apple Silicon](https://github.com/Meilleur-Tech/Meilleur-Commander-macOS-Releases/releases/download/macos-client-v2.2.2/Meilleur-Commander-Client-macOS-arm64-2.2.2.zip) |
-| **Intel Mac** · `x86_64` | **2.2.2** · independent Intel channel | [Download macOS 2.2.2 for Intel](https://github.com/Meilleur-Tech/Meilleur-Commander-macOS-Releases/releases/download/macos-client-x86_64-v2.2.2/Meilleur-Commander-Client-macOS-x86_64-2.2.2.zip) |
+| **Apple Silicon (M1, M2, M3, M4 and newer)** · `arm64` | **2.2.3** · GitHub **Latest** | [Download macOS 2.2.3 for Apple Silicon](https://github.com/Meilleur-Tech/Meilleur-Commander-macOS-Releases/releases/download/macos-client-v2.2.3/Meilleur-Commander-Client-macOS-arm64-2.2.3.zip) |
+| **Intel Mac** · `x86_64` | **2.2.3** · independent Intel channel | [Download macOS 2.2.3 for Intel](https://github.com/Meilleur-Tech/Meilleur-Commander-macOS-Releases/releases/download/macos-client-x86_64-v2.2.3/Meilleur-Commander-Client-macOS-x86_64-2.2.3.zip) |
 
 Both downloads are **ZIP archives containing the macOS DMG** and product identity. Download the correct ZIP, extract the DMG, open it, and install **Meilleur Commander Client.app** into Applications. The macOS GUI requires macOS 13 or later.
 
 **Signing:** App binaries are *ad-hoc code-signed*, not Apple Developer ID signed or notarized. The **update manifest is independently RSA signed**. If macOS blocks the app, allow that specific app through System Settings as appropriate. Never disable Gatekeeper globally.
 
-## What's new in 2.2.2
+## What's new in 2.2.3
+
+- After a reboot, a finished rollback or recovery no longer reports `progress_ui_identity_invalid` and relaunches the app ([#1725](https://github.com/Meilleur-Tech/Meilleur-Commander/issues/1725)). Foreign processes are never signalled.
+
+### 2.2.2
 
 - **Signed recovery of interrupted updates and rollbacks** ([#1561](https://github.com/Meilleur-Tech/Meilleur-Commander/issues/1561)). If an update or rollback is interrupted (crash, power loss, forced quit), the Client finishes it or restores the verified previous version via **Wiederherstellen** / Rollback, without re-pairing and without deleting files. Completion needs RSA-verified proofs for both installed generations; otherwise the verified pre-update state is restored. Unverifiable states stay blocked.
 - Everything from 2.2.1: native AppKit client and bundled Core from one exact source commit, bundled Companion (opt-in) and browser adapter, Settings and offline information improvements.
@@ -20,7 +24,7 @@ Both downloads are **ZIP archives containing the macOS DMG** and product identit
 
 ## Public discovery vs. Gateway activation
 
-GitHub has **only one Latest label** per repository, so **ARM64 is Latest**. Intel is published under the separately versioned `macos-client-x86_64-v2.2.2` tag. The two architecture channels must never overwrite one another.
+GitHub has **only one Latest label** per repository, so **ARM64 is Latest**. Intel is published under the separately versioned `macos-client-x86_64-v2.2.3` tag. The two architecture channels must never overwrite one another.
 
 The discovery catalogs are:
 
