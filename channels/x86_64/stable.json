@@ -5,17 +5,17 @@
   "release": {
     "arch": "x86_64",
     "artifact_source": {
-      "client_build": "sha256:efac249de143cc3a5f31888f8ba8a0bac646e798a87730c7f9d0554a8dfe62f9",
-      "client_version": "2.2.1",
+      "client_build": "sha256:6f12813691fa8c9fe49aebb67d5f8080941a62b2f8b3655384c3296f03d7a7e7",
+      "client_version": "2.2.2",
       "schema": "meilleur-client-release-artifact-source/v1",
-      "sha256": "cbd07be7a5a5da2fc692c7f1577de9c15354fe1e2eae17dabc662cda95813d73",
-      "source_commit": "e26f31ef91068328a2e2b7b11027e635470070d2",
-      "url": "https://github.com/Meilleur-Tech/Meilleur-Commander-macOS-Releases/releases/download/macos-client-x86_64-v2.2.1/Meilleur-Commander-Client-macOS-x86_64-2.2.1.zip",
+      "sha256": "4df961900a20b438f79f3f8682e8230cac4064f341867db7027cfda2b632b3c5",
+      "source_commit": "05c14ccee14690bcc43e0a0359e294ff238fdfdf",
+      "url": "https://github.com/Meilleur-Tech/Meilleur-Commander-macOS-Releases/releases/download/macos-client-x86_64-v2.2.2/Meilleur-Commander-Client-macOS-x86_64-2.2.2.zip",
       "version": 1
     },
-    "asset_size_bytes": 40085623,
-    "asset_url": "https://github.com/Meilleur-Tech/Meilleur-Commander-macOS-Releases/releases/download/macos-client-x86_64-v2.2.1/Meilleur-Commander-Client-macOS-x86_64-2.2.1.zip",
-    "client_build": "sha256:efac249de143cc3a5f31888f8ba8a0bac646e798a87730c7f9d0554a8dfe62f9",
+    "asset_size_bytes": 40500464,
+    "asset_url": "https://github.com/Meilleur-Tech/Meilleur-Commander-macOS-Releases/releases/download/macos-client-x86_64-v2.2.2/Meilleur-Commander-Client-macOS-x86_64-2.2.2.zip",
+    "client_build": "sha256:6f12813691fa8c9fe49aebb67d5f8080941a62b2f8b3655384c3296f03d7a7e7",
     "compatibility": {
       "bridge_protocol": {
         "maximum": 1,
@@ -28,9 +28,9 @@
     },
     "manifest": {
       "arch": "x86_64",
-      "artifact": "Meilleur-Commander-Client-macOS-x86_64-2.2.1.zip",
-      "client_build": "sha256:efac249de143cc3a5f31888f8ba8a0bac646e798a87730c7f9d0554a8dfe62f9",
-      "client_version": "2.2.1",
+      "artifact": "Meilleur-Commander-Client-macOS-x86_64-2.2.2.zip",
+      "client_build": "sha256:6f12813691fa8c9fe49aebb67d5f8080941a62b2f8b3655384c3296f03d7a7e7",
+      "client_version": "2.2.2",
       "compatibility": {
         "bridge_protocol": {
           "maximum": 1,
@@ -43,22 +43,22 @@
       },
       "os": "macos",
       "schema": "meilleur-client-release/v2",
-      "sha256": "cbd07be7a5a5da2fc692c7f1577de9c15354fe1e2eae17dabc662cda95813d73",
+      "sha256": "4df961900a20b438f79f3f8682e8230cac4064f341867db7027cfda2b632b3c5",
       "signature": {
         "algorithm": "rsa-sha256",
         "key_id": "mc-client-caf94007b07dc90b",
-        "value": "YMbewMzC6+2FFAZDqcmggErpxU+OhlDludPiyfvOKhBog9XwI7eLsrHdtHPTvUzFUTH7N/5jApQrsDc4yZn4+yseHMk8z4F211z43Bvv1Y7N8wcxhJfxkQLOtV7Tdu/jKNt6beW0EobzR8ZlopmvScLWeovprQksdnTpWZ8ZCWv6eCye0W6yG5R4T87PrwE6O8MTnSOHH+/0tbe56Ar7GA/g6Biq6/T0SLhu05g6G8vlIWsWsCQS8QU/wOScZd30yrIU57RbipRMy8KTelhd4AbWrRvNfXqzuqm5YOPusdTAHzabZHsZ71rFyRlAKAx6TdFY/XaJodlFJqLc6vYsdhAA7KdoiFsfQKoFeeG//svQnnszELEZz0NVcOm/29ocVoDZYkB3AI3V18TTOck9flftfOikaTn5RaxUnJGL+fPPzn2nZuwjUCqwt/FbncXsTWBzU5rMxPO4EOWpFwy1eq0sxTw4fDvZoRm1a0H8Ny8/Gc5GTbWVwt8EtE4gftP6"
+        "value": "HqvidxHXriVx5MNLMJ1L7eIGZOnfIaUV8mbTbY3ksYK7AqrgpbTrCryVWW81DrL1rwgdNvZzfq0IAj2LzO0dN/tUqX6gm7lxZr5kLUQP1pe8yibE3hUFDNY8ToXtLJxbuhYQyH/9zEfrO62nzTW5hxrR0so3YgnB4a9t4njsacxn1S3N5HPA9e2IZ3+l8tlMmiObsqECIUysBFuh3v7rvMT/TTniezgzTXdw1bGYQL6pgooW86m2bAe1vAk+Aj8b8gBelPfMMEzhS7fpcgtnDoqAhw7Xet6TAqYIFJ7DlAdGzcOXACsOwixlsJxo9BtoX9RlPVHddlmoewBkpvOafNQ7yer8wKYbpZ0IFxAAE+wGN1L+xPWjIxrdYfJ+KhI3a6o4KB5RC+5LsxpSF3Lz6500nf6DdbpU9A5lzoySIrSbZyuKIunsP08GavOcxwluenzIQ/MvVM26tW7JFIuHv2mm2yiobthHDJYQq8rSpharcpoJNxhrgKmdR90J+JXk"
       },
-      "source_commit": "e26f31ef91068328a2e2b7b11027e635470070d2",
+      "source_commit": "05c14ccee14690bcc43e0a0359e294ff238fdfdf",
       "version": 2
     },
     "manifest_key_id": "mc-client-caf94007b07dc90b",
-    "manifest_sha256": "2fc6e51e380c3bddcab47557bc76464d96ba27f1e1106ab55a04a57dc9c9106d",
-    "sha256": "cbd07be7a5a5da2fc692c7f1577de9c15354fe1e2eae17dabc662cda95813d73",
-    "source_commit": "e26f31ef91068328a2e2b7b11027e635470070d2",
-    "supersedes": "2.2.0",
-    "tag": "macos-client-x86_64-v2.2.1",
-    "version": "2.2.1"
+    "manifest_sha256": "eacf585f58fd9b27e33db1710fec39423f4ecf2838003da62a55262c42da5047",
+    "sha256": "4df961900a20b438f79f3f8682e8230cac4064f341867db7027cfda2b632b3c5",
+    "source_commit": "05c14ccee14690bcc43e0a0359e294ff238fdfdf",
+    "supersedes": "2.2.1",
+    "tag": "macos-client-x86_64-v2.2.2",
+    "version": "2.2.2"
   },
   "schema": "meilleur-client-public-release-index/v1",
   "status": "published"
