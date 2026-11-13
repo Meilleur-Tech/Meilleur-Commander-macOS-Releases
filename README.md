@@ -1,15 +1,22 @@
-# Meilleur Commander · macOS Downloads
+# Fabric Commander · macOS Downloads
 
-Official public, **binary-only** Meilleur Commander Client releases for macOS. Choose the package matching your CPU. **Current release: 2.2.3** (Apple Silicon and Intel).
+Official public, **binary-only** Meilleur Commander Client releases for macOS. Choose the package matching your CPU. **Current release: 2.2.4** (Apple Silicon and Intel).
 
 | Your Mac | Current version | Download |
 | --- | --- | --- |
-| **Apple Silicon (M1, M2, M3, M4 and newer)** · `arm64` | **2.2.3** · GitHub **Latest** | [Download macOS 2.2.3 for Apple Silicon](https://github.com/Meilleur-Tech/Meilleur-Commander-macOS-Releases/releases/download/macos-client-v2.2.3/Meilleur-Commander-Client-macOS-arm64-2.2.3.zip) |
-| **Intel Mac** · `x86_64` | **2.2.3** · independent Intel channel | [Download macOS 2.2.3 for Intel](https://github.com/Meilleur-Tech/Meilleur-Commander-macOS-Releases/releases/download/macos-client-x86_64-v2.2.3/Meilleur-Commander-Client-macOS-x86_64-2.2.3.zip) |
+| **Apple Silicon (M1, M2, M3, M4 and newer)** · `arm64` | **2.2.4** · GitHub **Latest** | [Download macOS 2.2.4 for Apple Silicon](https://github.com/Meilleur-Tech/Meilleur-Commander-macOS-Releases/releases/download/macos-client-v2.2.4/Meilleur-Commander-Client-macOS-arm64-2.2.4.zip) |
+| **Intel Mac** · `x86_64` | **2.2.4** · independent Intel channel | [Download macOS 2.2.4 for Intel](https://github.com/Meilleur-Tech/Meilleur-Commander-macOS-Releases/releases/download/macos-client-x86_64-v2.2.4/Meilleur-Commander-Client-macOS-x86_64-2.2.4.zip) |
 
 Both downloads are **ZIP archives containing the macOS DMG** and product identity. Download the correct ZIP, extract the DMG, open it, and install **Meilleur Commander Client.app** into Applications. The macOS GUI requires macOS 13 or later.
 
 **Signing:** App binaries are *ad-hoc code-signed*, not Apple Developer ID signed or notarized. The **update manifest is independently RSA signed**. If macOS blocks the app, allow that specific app through System Settings as appropriate. Never disable Gatekeeper globally.
+
+## What's new in 2.2.4
+
+- Fresh signed ARM64 and Intel x86_64 binaries from the integrated Fabric Commander client source `de7c05883c150bb53caaea69971b6fc0e374df3d`.
+- Both public immutable GitHub releases contain the ZIP, signed manifest, artifact source, release metadata, and SHA256SUMS. Independently downloaded public ZIP hashes have been verified.
+- **Development/QA release:** publication and public discovery are complete. Existing-installation GUI update, Intel physical device checks, crash/rollback and PROD rollout are separate acceptance tests; this publication does not claim those tests passed.
+- There are no deployed customer installations requiring an automatic migration from 2.2.3.
 
 ## What's new in 2.2.3
 
@@ -24,7 +31,7 @@ Both downloads are **ZIP archives containing the macOS DMG** and product identit
 
 ## Public discovery vs. Gateway activation
 
-GitHub has **only one Latest label** per repository, so **ARM64 is Latest**. Intel is published under the separately versioned `macos-client-x86_64-v2.2.3` tag. The two architecture channels must never overwrite one another.
+GitHub has **only one Latest label** per repository, so **ARM64 is Latest**. Intel is published under the separately versioned `macos-client-x86_64-v2.2.4` tag. The two architecture channels must never overwrite one another.
 
 The discovery catalogs are:
 
@@ -35,7 +42,7 @@ Catalogs contain a signed release manifest and package URL. **Public catalogs ar
 
 ## Required publisher checklist
 
-Every new ARM64 or Intel release is only considered **complete** when all of the following pass:
+Public release integrity and full native field acceptance are separate milestones. For **field deployment acceptance**, all of the following must pass:
 
 1. Freeze an approved, fully tested source SHA; build the native Client, Core, Companion and browser adapter for each target architecture, validate and sign.
 2. Before finalizing the immutable GitHub Release, prepare the complete metadata set (signed `manifest.json`, `artifact-source.json`, release metadata, hashes). **Immutable GitHub Releases cannot accept post-publication asset uploads.**
